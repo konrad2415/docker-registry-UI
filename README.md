@@ -1,7 +1,7 @@
 ## Example configuration for [docker-registry-web](https://github.com/mkuchin/docker-registry-web)
 
 #### Before start: install docker
-  
+  As standard procedure
 
 #### How to run:
     
