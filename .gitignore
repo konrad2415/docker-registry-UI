@@ -1,2 +1,3 @@
-nginx-auth-enabled/conf/nginx/ssl.cert 
-nginx-auth-enabled/conf/nginx/ssl.key
+*.cert 
+*.key
+nginx-auth-enabled/registry/

@@ -1,0 +1,9 @@
+<plugin name='cache-ehcache' version='1.0.5' grailsVersion='2.0 &gt; *'>
+  <author>Burt Beckwith</author>
+  <authorEmail>burt@burtbeckwith.com</authorEmail>
+  <title>Ehcache Cache Plugin</title>
+  <description>An Ehcache-based implementation of the Cache plugin</description>
+  <documentation>http://grails-plugins.github.com/grails-cache-ehcache/</documentation>
+  <type>CacheEhcacheGrailsPlugin</type>
+  <resources />
+</plugin>

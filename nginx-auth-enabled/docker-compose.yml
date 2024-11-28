@@ -1,34 +1,39 @@
 version: '2'
+
 services:
   nginx:
     image: nginx
     ports:
       - 80:80
     volumes:
-       - ./conf/nginx:/etc/nginx/conf.d/:ro
+      - ./conf/nginx:/etc/nginx/conf.d/:ro
     networks:
       - registry-net
     depends_on:
       - registry
       - registry-web
+
+
   registry-web:
     image: hyper/docker-registry-web
     ports:
       - 8080:8080
     volumes:
-       - ./conf/registry-web:/conf:ro
-       - ./db:/data
+      - ./conf/registry-web:/conf:ro
+      - ./web-ui/ROOT:/var/lib/tomcat7/webapps/ROOT
     networks:
       - registry-net
     depends_on:
-       - registry
+      - registry
+
+
   registry:
     image: registry
     ports:
       - 5000:5000
     volumes:
       - ./conf/registry:/etc/docker/registry:ro
-      - ./registry:/var/lib/registry
+      - ./registry:/registry/docker/registry/v2/
     networks:
       - registry-net
 
