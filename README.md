@@ -1,3 +1,5 @@
+<H1>FIX on restart loses all registries data except for auth </H1>h1
+
 ## Example configuration for [docker-registry-web](https://github.com/mkuchin/docker-registry-web)
 
 #### Before start: install docker
