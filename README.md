@@ -1,4 +1,6 @@
 <H1>FIX on restart loses all registries data except for auth </H1>h1
+The registry saves the containers images at /registry/docker/registry/v2
+Must be mounted at local volume 
 
 ## Example configuration for [docker-registry-web](https://github.com/mkuchin/docker-registry-web)
 
