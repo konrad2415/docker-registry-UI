@@ -25,12 +25,30 @@
      
 #### Push some images
 
-    docker login localhost
-    docker pull hello-world
-    docker tag hello-world localhost/hello-world:latest
-    docker tag hyper/docker-registry-web:auth-experimental localhost/docker-registry-web:latest
-    docker push localhost/hello-world:latest
-    docker push localhost/docker-registry-web:latest
+    docker login <hostIP/ORdns>:5000
+    docker images 
+    docker tag <localImage>:<ImageTag> <hostIP/ORdns>:5000/<localImage>:<ImageTag>
+    docker push <hostIP/ORdns>:5000/<localImage>:<ImageTag> 
+    docker image rm <localImage>:<ImageTag>
+    docker image rm <hostIP/ORdns>:5000/<localImage>:<ImageTag>
+    docker images 
+
+    ## EXAMPLE
+     -- My working env -- 
+     docker login 192.168.171.97:5000
+     docker images 
+     docker tag haproxy:latest 192.168.171.97:5000/haproxy:latest
+     docker push 192.168.171.97:5000/haproxy:latest 
+     docker image rm haproxy:latest 
+     docker images | grep haproxy
+     docker image rm 192.168.171.97:5000/haproxy:latest 
+     
+     -- Oficial doc example ---
+     docker pull hello-world
+     docker tag hello-world localhost/hello-world:latest
+     docker tag hyper/docker-registry-web:auth-experimental localhost/docker-registry-web:latest
+     docker push localhost/hello-world:latest
+     docker push localhost/docker-registry-web:latest
 
 #### and then pull
 
