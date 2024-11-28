@@ -14,6 +14,11 @@
 #### Create test user:
 ![Creating user](https://github.com/konrad2415/docker-registry-UI/blob/master/images/create-test.gif)
                  
+### Bug fixes
+    In Order to be accessible the cli docker login from remote hosts 
+    using IP /OR dns were modified all references to localhost by 192.168.171.97 on  
+        - file nginx-auth-enabled/conf/registry/config.yml  
+        - nginx-auth-enabled/conf/nginx/default.conf 
 
 #### Push some images
 
