@@ -19,7 +19,10 @@
     using IP /OR dns were modified all references to localhost by 192.168.171.97 on  
         - file nginx-auth-enabled/conf/registry/config.yml  
         - nginx-auth-enabled/conf/nginx/default.conf 
-
+### Internal web app UI 
+     The internal web app is hosted by a TOMCATv7 web server 
+     The views are located at /var/lib/tomcat7/webapps/ROOT/WEB-INF/grails-app/views/
+     
 #### Push some images
 
     docker login localhost
