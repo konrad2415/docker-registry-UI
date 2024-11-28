@@ -12,7 +12,8 @@
     
 
 #### Create test user:
-![Creating user](https://raw.githubusercontent.com/mkuchin/docker-registry-web-examples/master/images/create-test.gif)
+![Creating user](https://github.com/konrad2415/docker-registry-UI/blob/master/images/create-test.gif)
+                 
 
 #### Push some images
 
