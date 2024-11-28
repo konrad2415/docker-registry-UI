@@ -1,5 +1,5 @@
 registry:
-   url: http://registry:5000/v2
+   url: http://192.168.171.97:5000/v2
    name: localhost
    readonly: false
    auth:

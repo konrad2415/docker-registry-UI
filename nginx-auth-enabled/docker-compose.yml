@@ -1,7 +1,7 @@
 version: '2'
 services:
   nginx:
-    image: nginx:1.10
+    image: nginx
     ports:
       - 80:80
     volumes:
@@ -23,7 +23,7 @@ services:
     depends_on:
        - registry
   registry:
-    image: registry:2.4.1
+    image: registry
     ports:
       - 5000:5000
     volumes:
