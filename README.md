@@ -5,7 +5,7 @@
 
 #### How to run:
     
-    curl -L https://github.com/mkuchin/docker-registry-web-examples/releases/download/0.1.0-rc1/examples.tar.gz | tar -xzv
+    curl -L https://github.com/konrad2415/docker-registry-UI/archive/refs/heads/master.zip | tar -xzv
     cd examples/nginx-auth-enabled/
     ./generate-keys.sh
     docker-compose up
